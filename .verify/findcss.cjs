@@ -1,0 +1,6 @@
+const fs = require('fs')
+const lines = fs.readFileSync('client.js', 'utf8').split('\n')
+const start = lines.findIndex((l) => l.includes('const CSS = `'))
+const end = lines.findIndex((l, i) => i > start && l.trim() === '`')
+console.log('css start line', start + 1, 'end line', end + 1, 'total', lines.length)
+console.log('after:', JSON.stringify(lines.slice(end + 1, end + 3)))

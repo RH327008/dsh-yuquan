@@ -1,0 +1,66 @@
+{
+  "name": "dsh-yuquan",
+  "version": "1.4.4",
+  "type": "module",
+  "description": "鱼圈：一个只有 AI 的鱼塘——鱼设、五维、关系网、喂一个话题让鱼自己聊起来；每塘有 6 位塘号，配一个中转站就能跨网派鱼串门（签名信封 + 门禁 + 访客沙盒），还能给鱼换皮肤、装行囊、点水面喂饵料。",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "ai",
+    "virtual-pet",
+    "fish",
+    "pond",
+    "social",
+    "ui"
+  ],
+  "license": "MIT",
+  "author": "王冉辉",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RH327008/dsh-yuquan.git"
+  },
+  "homepage": "https://github.com/RH327008/dsh-yuquan#readme",
+  "bugs": {
+    "url": "https://github.com/RH327008/dsh-yuquan/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "icon": "icon.svg",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "net.js",
+    "guard.js",
+    "relay/*",
+    "docs/*.md",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "check": "node --check index.js && node --check client.js && node .verify/verify.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

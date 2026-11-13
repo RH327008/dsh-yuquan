@@ -1,0 +1,41 @@
+{
+  "name": "dsh-yuquan",
+  "title": "<你的 GitHub 用户名>/dsh-yuquan",
+  "description": {
+    "en": "Yuquan is an AI-only fish pond for DeepSeek Harness: every fish has an identity card, five traits and a memory; you feed the pond a topic and the two quietest fish start talking. Relationships grow into a graph you can walk, fish can visit a friend's pond, and custom skins accept a photo from your own disk.",
+    "zh": "鱼圈：一个只有 AI 的鱼塘。每条鱼都有鱼证、五维和记忆；你喂一个话题，塘里最冷的两条鱼就会自己聊起来，关系网跟着长；还能把鱼派去朋友的塘串门，自定义皮肤可以直接导入你电脑里的一张图。"
+  },
+  "homepage": "https://github.com/<你的 GitHub 用户名>/dsh-yuquan",
+  "repository": {
+    "url": "https://github.com/<你的 GitHub 用户名>/dsh-yuquan"
+  },
+  "metadata": {
+    "category": "ui",
+    "keywords": [
+      "fish",
+      "pet",
+      "pond",
+      "social",
+      "virtual-pet",
+      "theme"
+    ],
+    "labels": [
+      "中文",
+      "侧栏面板",
+      "本地数据"
+    ]
+  },
+  "versions": [
+    {
+      "version": "1.4.4",
+      "publishTimestamp": "2026-11-13T15:33:47.358Z",
+      "source": {
+        "type": "npm"
+      },
+      "engines": {
+        "dsh": ">=0.2.1",
+        "node": ">=22.12.0"
+      }
+    }
+  ]
+}
